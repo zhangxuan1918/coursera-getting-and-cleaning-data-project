@@ -5,6 +5,7 @@
 #####################################################################
 
 ## a1) check folder exists, otherwise exist with warning message
+message("checking ./UCI HAR Dataset exits")
 folder <- "./UCI HAR Dataset"
 if (!file.exists(folder)) { stop("./UCI HAR Dataset does not exits!")}
 
@@ -29,12 +30,14 @@ loaddata <- function(name) {
 }
 
 foldertrain <- paste(folder, "/train", sep="")
-
+message("checking UCI HAR Dataset/train exists...")
 if (!file.exists(foldertrain)) { stop("./UCI HAR Dataset/train does not exits!")}
 
 ## load training data 
+message("loading train data...")
 traindata <- loaddata("train")
 ## load testing data
+message("loading test data...")
 testdata <- loaddata("test")
 ## row combine training and testing data
 traintestdata <- rbind(traindata, testdata)
@@ -45,6 +48,7 @@ traintestdata <- rbind(traindata, testdata)
 ################################################################################
 
 ## load feature names
+message("select mean and standard deviation for each measurement...")
 featurename <- read.table(paste(folder, "/features.txt", sep=""))[[2]]
 featurename <- as.character(levels(featurename))[featurename]
 
@@ -89,6 +93,7 @@ names(traintestdata) <- c("subject", "activity.id", "activity.name", featurename
 ## c) Uses descriptive activity names to name the activities in the data set
 ################################################################################
 
+message("add activity names to data...")
 ## load activity names
 activityname <- read.table(paste(folder, "/activity_labels.txt", sep=""))[[2]]
 ## turn factor to vector
@@ -109,7 +114,7 @@ traintestdata$activity.name <- activityname[traintestdata$activity.name]
 ## e) Creates a second, independent tidy data set with the average of each 
 ## variable for each activity and each subject. 
 ################################################################################
-
+message("create tidydata set...")
 ## split traintestdata according to subject and activity.name columns
 splitdata <- split(traintestdata, list(traintestdata$subject, 
                                        traintestdata$activity.name))
@@ -128,3 +133,4 @@ names(tidydata) <- c(names(tidydata)[1:3],
                         paste(names(tidydata)[c(-1,-2,-3)],"average", sep="."))
 ## store tidydata into file
 write.table(tidydata, file="tidydata.txt", sep="\t")
+message("Data preprocessing done...")
