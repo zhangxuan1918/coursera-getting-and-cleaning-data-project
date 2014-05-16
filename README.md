@@ -30,8 +30,12 @@ You should create one R script called run_analysis.R that does the following.
 ## Usage
 make sure the R working directory contains the required dataset. See [CodeBook](./CodeBook.md) for data source.
 
+```SHELL
 Rscript run_analysis.R
+```
 
 To load tidydata.txt in R, use
 
+```R
 read.table("tidydata.txt", sep="\t")
+```
