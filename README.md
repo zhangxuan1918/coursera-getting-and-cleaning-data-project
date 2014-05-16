@@ -19,16 +19,20 @@ You should create one R script called run_analysis.R that does the following.
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive activity names. 
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
 Good luck!
 ---
 
-## File Included
+## Files Included
 * README.md: describes the task and files included
 * CodeBook.md: describes the variables, the data, and data processing to transform raw data to clearn tidy data 
 * run_analysis.R: R code for data processing
 * tidydata.txt: output of run_analysis.
 
 ## Usage
-make sure the R working directory contains the required dataset. See CodeBook for data source.
+make sure the R working directory contains the required dataset. See [CodeBook](./CodeBook.md) for data source.
 
 Rscript run_analysis.R
+
+To load tidydata.txt in R
+read.table("tidydata.txt",sep="\t")

@@ -1,7 +1,7 @@
 ## Input Raw Data Set
 
 ### Input Raw Data Name
-[UCI HAR Dataset]http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+[UCI HAR Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ### Data Set Information
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
@@ -76,75 +76,75 @@ We merge training and testing dataset into one dataset. We extracts only the mea
 tidydata.txt
 
 ### Column Names for Output Tidy Data Frame
-*subject                                                
-*activity.id                                            
-*activity.name                                         
-*time.body.acceleration.mean.x.average                 
-*time.body.acceleration.mean.y.average                  
-*time.body.acceleration.mean.z.average                  
-*time.body.acceleration.std.x.average                  
-*time.body.acceleration.std.y.average                   
-*time.body.acceleration.std.z.average                   
-*time.gravityacceleration.mean.x.average                
-*time.gravityacceleration.mean.y.average                
-*time.gravityacceleration.mean.z.average                
-*time.gravityacceleration.std.x.average                
-*time.gravityacceleration.std.y.average                 
-*time.gravityacceleration.std.z.average                 
-*time.body.acceleration.jerk.mean.x.average             
-*time.body.acceleration.jerk.mean.y.average             
-*time.body.acceleration.jerk.mean.z.average             
-*time.body.acceleration.jerk.std.x.average              
-*time.body.acceleration.jerk.std.y.average              
-*time.body.acceleration.jerk.std.z.average              
-*time.body.gyroscope.mean.x.average                     
-*time.body.gyroscope.mean.y.average                     
-*time.body.gyroscope.mean.z.average                     
-*time.body.gyroscope.std.x.average                     
-*time.body.gyroscope.std.y.average                      
-*time.body.gyroscope.std.z.average                      
-*time.body.gyroscope.jerk.mean.x.average                
-*time.body.gyroscope.jerk.mean.y.average                
-*time.body.gyroscope.jerk.mean.z.average                
-*time.body.gyroscope.jerk.std.x.average                 
-*time.body.gyroscope.jerk.std.y.average                 
-*time.body.gyroscope.jerk.std.z.average                 
-*time.body.acceleration.magnitude.mean.average          
-*time.body.acceleration.magnitude.std.average           
-*time.gravityacceleration.magnitude.mean.average        
-*time.gravityacceleration.magnitude.std.average         
-*time.body.acceleration.jerk.magnitude.mean.average     
-*time.body.acceleration.jerk.magnitude.std.average      
-*time.body.gyroscope.magnitude.mean.average             
-*time.body.gyroscope.magnitude.std.average              
-*time.body.gyroscope.jerk.magnitude.mean.average       
-*time.body.gyroscope.jerk.magnitude.std.average         
-*frequency.body.acceleration.mean.x.average             
-*frequency.body.acceleration.mean.y.average             
-*frequency.body.acceleration.mean.z.average             
-*frequency.body.acceleration.std.x.average             
-*frequency.body.acceleration.std.y.average              
-*frequency.body.acceleration.std.z.average              
-*frequency.body.acceleration.jerk.mean.x.average        
-*frequency.body.acceleration.jerk.mean.y.average        
-*frequency.body.acceleration.jerk.mean.z.average        
-*frequency.body.acceleration.jerk.std.x.average         
-*frequency.body.acceleration.jerk.std.y.average         
-*frequency.body.acceleration.jerk.std.z.average         
-*frequency.body.gyroscope.mean.x.average                
-*frequency.body.gyroscope.mean.y.average                
-*frequency.body.gyroscope.mean.z.average                
-*frequency.body.gyroscope.std.x.average                 
-*frequency.body.gyroscope.std.y.average                 
-*frequency.body.gyroscope.std.z.average                 
-*frequency.body.acceleration.magnitude.mean.average     
-*frequency.body.acceleration.magnitude.std.average      
-*frequency.body.acceleration.jerk.magnitude.mean.average
-*frequency.body.acceleration.jerk.magnitude.std.average 
-*frequency.body.gyroscope.magnitude.mean.average        
-*frequency.body.gyroscope.magnitude.std.average         
-*frequency.body.gyroscope.jerk.magnitude.mean.average  
-*frequency.body.gyroscope.jerk.magnitude.std.average 
+* subject                                                
+* activity.id                                            
+* activity.name                                         
+* time.body.acceleration.mean.x.average                 
+* time.body.acceleration.mean.y.average                  
+* time.body.acceleration.mean.z.average                  
+* time.body.acceleration.std.x.average                  
+* time.body.acceleration.std.y.average                   
+* time.body.acceleration.std.z.average                   
+* time.gravityacceleration.mean.x.average                
+* time.gravityacceleration.mean.y.average                
+* time.gravityacceleration.mean.z.average                
+* time.gravityacceleration.std.x.average                
+* time.gravityacceleration.std.y.average                 
+* time.gravityacceleration.std.z.average                 
+* time.body.acceleration.jerk.mean.x.average             
+* time.body.acceleration.jerk.mean.y.average             
+* time.body.acceleration.jerk.mean.z.average             
+* time.body.acceleration.jerk.std.x.average              
+* time.body.acceleration.jerk.std.y.average              
+* time.body.acceleration.jerk.std.z.average              
+* time.body.gyroscope.mean.x.average                     
+* time.body.gyroscope.mean.y.average                     
+* time.body.gyroscope.mean.z.average                     
+* time.body.gyroscope.std.x.average                     
+* time.body.gyroscope.std.y.average                      
+* time.body.gyroscope.std.z.average                      
+* time.body.gyroscope.jerk.mean.x.average                
+* time.body.gyroscope.jerk.mean.y.average                
+* time.body.gyroscope.jerk.mean.z.average                
+* time.body.gyroscope.jerk.std.x.average                 
+* time.body.gyroscope.jerk.std.y.average                 
+* time.body.gyroscope.jerk.std.z.average                 
+* time.body.acceleration.magnitude.mean.average          
+* time.body.acceleration.magnitude.std.average           
+* time.gravityacceleration.magnitude.mean.average        
+* time.gravityacceleration.magnitude.std.average         
+* time.body.acceleration.jerk.magnitude.mean.average     
+* time.body.acceleration.jerk.magnitude.std.average      
+* time.body.gyroscope.magnitude.mean.average             
+* time.body.gyroscope.magnitude.std.average              
+* time.body.gyroscope.jerk.magnitude.mean.average       
+* time.body.gyroscope.jerk.magnitude.std.average         
+* frequency.body.acceleration.mean.x.average             
+* frequency.body.acceleration.mean.y.average             
+* frequency.body.acceleration.mean.z.average             
+* frequency.body.acceleration.std.x.average             
+* frequency.body.acceleration.std.y.average              
+* frequency.body.acceleration.std.z.average              
+* frequency.body.acceleration.jerk.mean.x.average        
+* frequency.body.acceleration.jerk.mean.y.average        
+* frequency.body.acceleration.jerk.mean.z.average        
+* frequency.body.acceleration.jerk.std.x.average         
+* frequency.body.acceleration.jerk.std.y.average         
+* frequency.body.acceleration.jerk.std.z.average         
+* frequency.body.gyroscope.mean.x.average                
+* frequency.body.gyroscope.mean.y.average                
+* frequency.body.gyroscope.mean.z.average                
+* frequency.body.gyroscope.std.x.average                 
+* frequency.body.gyroscope.std.y.average                 
+* frequency.body.gyroscope.std.z.average                 
+* frequency.body.acceleration.magnitude.mean.average     
+* frequency.body.acceleration.magnitude.std.average      
+* frequency.body.acceleration.jerk.magnitude.mean.average
+* frequency.body.acceleration.jerk.magnitude.std.average 
+* frequency.body.gyroscope.magnitude.mean.average        
+* frequency.body.gyroscope.magnitude.std.average         
+* frequency.body.gyroscope.jerk.magnitude.mean.average  
+* frequency.body.gyroscope.jerk.magnitude.std.average 
 
 ### Row Name for Output Tidy Data
 row name for output data has following format
@@ -154,11 +154,12 @@ subject.activity
 where subject is the id of subject (from 1 to 30) and activity is the name of the activity (walking, walking.upstairs, walking.downstairs, sitting, standing, laying)
 
 Example
+
 1.walking is the row name for subject 1 and activity walking.
 
 ### Output Example
 |       |subject |activity.id |activity.name |time.body.acceleration.mean.x.average|
-| ----- |--------|------------|--------------|-------------------------------------|
+| ----- |-------:|-----------:|-------------:|------------------------------------:|
 |1.laying|       1|           6|        laying|                             0.2215982|
 |2.laying|       2|           6|        laying|                             0.2813734|
 |3.laying|       3|           6|        laying|                             0.2755169|
